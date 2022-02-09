@@ -1,0 +1,29 @@
+.card{
+  position: absolute;
+  top: 720px;
+  
+}
+.card__img{
+  position: absolute;
+  width: 176px;
+  height: 235px;
+  background-image: url('../images/eminem.jpg');
+  background-size: cover;
+  border-radius: 15px;
+}
+.card__description{
+  position: absolute;
+  width: 175px;
+  height: 14px;
+  top: 250px;
+  font-size: 12px;
+  line-height: 110%;
+}
+.card__costs{
+  position: absolute;
+  width: 175px;
+  height: 14px;
+  top: 275px;
+  font-size: 10px;
+  line-height: 110%;
+}

@@ -6,3 +6,8 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+.wrapper{
+  max-width: 1060px;
+  height: 100vh;
+  margin: 0 auto;
+}
