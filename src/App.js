@@ -1,8 +1,13 @@
 import React from 'react'
+import NavBar from './components/NavBar';
+import Galery from './components/Galery';
 
 function App() {
   return (
-    <div>App</div>
+    <div className='wrapper'>
+      <NavBar />
+      <Galery />
+    </div>
   )
 }
 
