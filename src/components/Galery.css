@@ -75,3 +75,16 @@
   border-radius: 8.95px;
   box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.6);
 }
+
+.description{
+  position: absolute;
+  top: 550px;
+}
+.description__title{
+  font-size: 38px;
+  margin-left: 50px;
+  padding: 20px 0;
+}
+.descrition__constent{
+  margin-left: 50px;
+}
