@@ -36,6 +36,7 @@
   top: 250px;
   margin-left: 25px;
   font-size: 10px;
+  color: red;
 }
 .card__description{
   position: absolute;
