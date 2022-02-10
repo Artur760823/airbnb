@@ -1,32 +1,15 @@
 import React from 'react'
 import './Card.css';
 
-function Card() {
+function Card(props) {
   return (
     <div className='cards-container'>
       <div className='card'>
-        <div className='card__img'></div>
-        <span className='card__stats'>4.5</span>
-        <span className='card__star'>(6) *</span>
-        <span>USA</span>
-        <p className='card__description'>Rap session with Eminem</p>
-        <p className='card__costs'>From 200.99$ / person</p>
-      </div>
-      <div className='card'>
-        <div className='card__img'></div>
-        <span className='card__stats'>4.5</span>
-        <span className='card__star'>(6) *</span>
-        <span>USA</span>
-        <p className='card__description'>Rap session with Eminem</p>
-        <p className='card__costs'>From 200.99$ / person</p>
-      </div>
-      <div className='card'>
-        <div className='card__img'></div>
-        <span className='card__stats'>4.5</span>
-        <span className='card__star'>(6) *</span>
-        <span>USA</span>
-        <p className='card__description'>Rap session with Eminem</p>
-        <p className='card__costs'>From 200.99$ / person</p>
+        <img className='card__img' src={props.image} />
+        <span className='card__stats'>{props.rating}</span>
+        <span className='card__star'>{props.count} {props.country}</span>
+        <p className='card__description'>{props.title}</p>
+        <p className='card__costs'>{props.price}/ person</p>
       </div>
     </div>
   )
