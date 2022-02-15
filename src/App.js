@@ -2,22 +2,27 @@ import React from 'react'
 import NavBar from './components/NavBar';
 import Galery from './components/Galery';
 import Card from './components/Card';
-import pic from './images/eminem.jpg';
+import data from './data';
 
 
 function App() {
+
+  const cardElements = data.map(item => {
+    return (
+      <Card
+        id={item.id}
+        item={item}
+      />
+    )
+  })
   return (
     <div className='wrapper'>
       <NavBar />
       <Galery />
-      <Card
-        image={pic}
-        country="USA"
-        rating="5.0"
-        count="(6) *"
-        title="Rap session with Eminem"
-        price="From 200.99$"
-      />
+      <section className='card-list'>
+        {cardElements}
+      </section>
+
     </div>
   )
 }

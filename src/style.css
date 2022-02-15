@@ -11,3 +11,13 @@
   height: 100vh;
   margin: 0 auto;
 }
+
+.card-list{
+  position: absolute;
+  top: 750px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  justify-content: space-between;
+}
